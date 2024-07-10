@@ -1,0 +1,19 @@
+ create database test;
+     use students;
+     
+      create table Student(
+     id int primary key,
+     name varchar(20),
+     email varchar(25),
+     address varchar(50),
+     admission_date varchar(20),
+     mobile_no int,
+     fees int,
+     status varchar(20));  
+     
+     insert into student values(1,"anuj","anuj@gmail.com","bhopal","16-08-2020",789456,50000,true);
+     
+     select * from student;
+     
+     show tables;
+     show databases;
