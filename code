@@ -12,6 +12,9 @@ namespace Studentwebapi.Entity
         public string Status { get; set; }
     }
 }
+
+//repo interface
+
 using Studentwebapi.Entity;
 
 namespace Studentwebapi.repository
@@ -35,6 +38,9 @@ namespace Studentwebapi.repository
 
     }
 }
+
+//repo class
+
 using MySql.Data.MySqlClient;
 using Mysqlx.Sql;
 using Studentwebapi.Entity;
@@ -357,6 +363,11 @@ namespace Studentwebapi.repository
         }
     }
 }
+
+
+// Service interface 
+
+
 using Studentwebapi.Entity;
 
 namespace Studentwebapi.service
@@ -379,6 +390,9 @@ namespace Studentwebapi.service
                 public void sortbyname();*/
     }
 }
+
+
+//service class 
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Studentwebapi.Entity;
@@ -442,6 +456,9 @@ namespace Studentwebapi.service
           public void update(Student student);
 
           public void sortbyname();*/
+
+//controller
+
     using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Studentwebapi.service;
